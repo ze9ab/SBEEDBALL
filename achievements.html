@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>الإنجازات | FPE Staff Club Sbeedball</title>
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .timeline{position:relative; display:flex; flex-direction:column;}
+  .timeline::before{content:''; position:absolute; right:11px; top:10px; bottom:10px; width:2px; background:rgba(11,11,13,0.12);}
+  .t-item{display:flex; gap:28px; padding:30px 0; position:relative;}
+  .t-dot{width:24px; height:24px; border-radius:50%; background:var(--purple); flex-shrink:0; margin-top:4px; position:relative; z-index:1; box-shadow:0 0 0 6px var(--white);}
+  .t-content .year{font-family:'IBM Plex Sans Arabic'; color:var(--purple); font-weight:600; font-size:14px;}
+  .t-content h3{font-size:22px; margin:6px 0 8px; font-family:'Cairo'; font-weight:800;}
+  .t-content p{color:var(--muted); font-size:15px; max-width:560px; line-height:1.7;}
+
+  .trophy-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .trophy{background:var(--black); color:var(--white); border-radius:4px; padding:30px; text-align:center;}
+  .trophy .ic{font-size:34px; margin-bottom:14px;}
+  .trophy .n{font-family:'Lalezar'; font-size:38px; color:var(--purple-bright);}
+  .trophy .l{font-size:14px; color:rgba(245,245,247,0.6); margin-top:6px;}
+
+  @media (max-width:900px){.trophy-grid{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="brand">
+    <img src="assets/logo.png" alt="FPE Staff Club">
+    <div class="names"><span class="top">FPE Staff Club</span><span class="bottom">SBEEDBALL</span></div>
+  </div>
+  <ul>
+    <li><a href="index.html">الرئيسية</a></li>
+    <li><a href="about.html">اللعبة</a></li>
+    <li><a href="achievements.html" class="active">الإنجازات</a></li>
+    <li><a href="coaches.html">المدربين</a></li>
+    <li><a href="players.html">اللاعبين</a></li>
+  </ul>
+  <button class="nav-toggle" aria-label="القائمة"><span></span><span></span><span></span></button>
+</nav>
+
+<header class="page-head">
+  <div class="container">
+    <div class="eyebrow">مشوارنا</div>
+    <h1>محطات من إنجازاتنا</h1>
+    <p>كل بطولة كانت خطوة، وكل خطوة بنت اللي إحنا عليه دلوقتي.</p>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <div class="trophy-grid reveal" style="margin-bottom:70px;">
+      <div class="trophy"><div class="ic">🏆</div><div class="n">3</div><div class="l">كؤوس بطولات</div></div>
+      <div class="trophy"><div class="ic">🥈</div><div class="n">5</div><div class="l">مراكز ثانية وثالثة</div></div>
+      <div class="trophy"><div class="ic">📅</div><div class="n">2022</div><div class="l">سنة التأسيس</div></div>
+    </div>
+
+    <div class="timeline reveal">
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="year">2026</div>
+          <h3>بطولة الشركات المفتوحة</h3>
+          <p>فريق FPE Staff Club يحقق المركز الأول بعد موسم كامل من التدريب المكثف بين الموظفين.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="year">2024</div>
+          <h3>كأس الإسكندرية الداخلي</h3>
+          <p>وصول الفريق للنهائي وتحقيق المركز الثاني أمام فرق من شركات تانية.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="year">2023</div>
+          <h3>أول دوري داخلي بين الأقسام</h3>
+          <p>تنظيم أول دوري بين موظفي الشركة، وده اللي شجّع على تكوين فريق رسمي للنادي.</p>
+        </div>
+      </div>
+      <div class="t-item">
+        <div class="t-dot"></div>
+        <div class="t-content">
+          <div class="year">2022</div>
+          <h3>تأسيس FPE Staff Club</h3>
+          <p>انطلقت الفكرة من مجموعة موظفين عاشقين للعبة، وبقى دلوقتي نادي معروف بمدربينه وبطولاته.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="f-brand">FPE Staff Club — Sbeedball</div>
+  <div class="f-social">
+    <a href="https://wa.me/201000000000" target="_blank" rel="noopener" aria-label="واتساب">
+      <svg viewBox="0 0 24 24"><path d="M17.6 6.32A8.86 8.86 0 0 0 12 3.6a8.83 8.83 0 0 0-7.65 13.27L3.6 21l4.27-1.12a8.8 8.8 0 0 0 4.13 1.05h0a8.83 8.83 0 0 0 8.84-8.81 8.78 8.78 0 0 0-3.24-5.8Zm-5.6 13.55h0a7.34 7.34 0 0 1-3.73-1.02l-.27-.16-2.77.73.74-2.7-.18-.28a7.34 7.34 0 0 1 11.4-9.07 7.27 7.27 0 0 1 2.17 5.18 7.35 7.35 0 0 1-7.36 7.32Zm4.03-5.49c-.22-.11-1.3-.64-1.5-.71-.2-.08-.35-.11-.5.11-.15.22-.57.71-.7.86-.13.15-.26.16-.48.05-1.3-.65-2.16-1.16-3.02-2.63-.23-.4.23-.37.65-1.23.07-.15.04-.28-.03-.4-.08-.11-.5-1.2-.69-1.65-.18-.43-.36-.37-.5-.37-.12-.01-.27-.01-.41-.01-.15 0-.38.05-.58.28-.2.22-.77.75-.77 1.83 0 1.08.79 2.12.9 2.27.11.15 1.55 2.36 3.76 3.22 1.87.74 2.25.6 2.66.56.41-.04 1.3-.53 1.49-1.04.18-.51.18-.95.13-1.04-.06-.1-.2-.15-.41-.26Z"/></svg>
+    </a>
+    <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="إنستجرام">
+      <svg viewBox="0 0 24 24"><path d="M12 2.2c2.7 0 3 .01 4.1.06 1 .05 1.5.21 1.85.35.46.18.8.4 1.15.74.34.35.56.69.74 1.15.14.36.3.86.35 1.85.05 1.1.06 1.4.06 4.1s-.01 3-.06 4.1c-.05 1-.21 1.5-.35 1.85a3.1 3.1 0 0 1-.74 1.15c-.35.34-.69.56-1.15.74-.36.14-.86.3-1.85.35-1.1.05-1.4.06-4.1.06s-3-.01-4.1-.06c-1-.05-1.5-.21-1.85-.35a3.1 3.1 0 0 1-1.15-.74 3.1 3.1 0 0 1-.74-1.15c-.14-.36-.3-.86-.35-1.85C2.21 15 2.2 14.7 2.2 12s.01-3 .06-4.1c.05-1 .21-1.5.35-1.85.18-.46.4-.8.74-1.15.35-.34.69-.56 1.15-.74.36-.14.86-.3 1.85-.35C7.5 2.21 7.8 2.2 12 2.2Zm0 1.62c-2.66 0-2.97.01-4.02.06-.86.04-1.32.18-1.63.3-.41.16-.7.35-1 .65-.3.3-.5.59-.66 1-.12.31-.26.77-.3 1.63-.05 1.05-.06 1.36-.06 4.02s.01 2.97.06 4.02c.04.86.18 1.32.3 1.63.16.41.36.7.66 1 .3.3.59.5 1 .66.31.12.77.26 1.63.3 1.05.05 1.36.06 4.02.06s2.97-.01 4.02-.06c.86-.04 1.32-.18 1.63-.3.41-.16.7-.36 1-.66.3-.3.5-.59.66-1 .12-.31.26-.77.3-1.63.05-1.05.06-1.36.06-4.02s-.01-2.97-.06-4.02c-.04-.86-.18-1.32-.3-1.63a2.6 2.6 0 0 0-.66-1 2.6 2.6 0 0 0-1-.66c-.31-.12-.77-.26-1.63-.3-1.05-.05-1.36-.06-4.02-.06ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 1.62a3.38 3.38 0 1 0 0 6.76 3.38 3.38 0 0 0 0-6.76Zm5.4-2.96a1.04 1.04 0 1 1-2.08 0 1.04 1.04 0 0 1 2.08 0Z"/></svg>
+    </a>
+    <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="فيسبوك">
+      <svg viewBox="0 0 24 24"><path d="M22 12.06C22 6.5 17.52 2 12 2S2 6.5 2 12.06c0 5 3.66 9.16 8.44 9.94v-7.03H7.9v-2.91h2.54V9.84c0-2.51 1.49-3.89 3.78-3.89 1.1 0 2.24.2 2.24.2v2.46h-1.26c-1.24 0-1.63.77-1.63 1.56v1.87h2.78l-.44 2.91h-2.34V22c4.78-.78 8.44-4.94 8.44-9.94Z"/></svg>
+    </a>
+  </div>
+  © 2026 كل الحقوق محفوظة
+</footer>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
